@@ -14,7 +14,7 @@
   
 *{
     font-family: nippo;
-    box-sizing: border-box;
+    box-sizing: border-box; 
 }
 
 body{
@@ -60,6 +60,9 @@ a{
 }
 .burger-menu{
     display: none;
+}
+.burger-menu img{
+    width: 32px;
 }
 .hero-banner {
     position: relative;
@@ -112,6 +115,7 @@ a{
     background: hsla(0, 0%, 100%, 0.08);
     box-shadow: 0px 0px 30px 0px #00000033;
     padding-bottom: 20px;
+    width: 48%;
 }
 .services-tab h3, .our-work h3{
     font-size: 24px;
@@ -127,7 +131,7 @@ a{
     color: #DFDFDF;
 }
 .services-tab-pink{
-    width: 472px;
+    /* width: 472px; */
     height: 24px;
     background-color: #E334B0;
 }
@@ -143,6 +147,7 @@ a{
     display: flex;
     flex-wrap: wrap;
     gap: 18px;
+    width: 100%;
 }
 .quote,.testimonial-container{
     position: relative;
@@ -163,6 +168,12 @@ a{
 .chalkboard-head,.health-lottery-head{
     display: flex;
     justify-content: space-between;
+}
+.chalkboard,.health-lottery{
+    width: 49%;
+}
+.chalkboard img,.health-lottery img{
+    width: -webkit-fill-available;
 }
 .our-work h3{
     margin: 0;
@@ -235,6 +246,7 @@ a{
 .statistics-info{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .stat {
     display: flex;
@@ -515,7 +527,7 @@ button {
 
 
 /* ====================contact us=========================== */
-.incline-contact-us .menu li a{
+.incline-contact-us .menu li a, .incline-our-work .menu li a,.incline-careers .menu li a{
     color: rgba(33, 40, 58, 1);
 }
 .contact-info {
@@ -595,6 +607,207 @@ form p{
 
 }
 
+/* ========================Our-Work-page================================== */
+.incline-our-work .our-work-filter h2,.incline-our-work .our-work h3,.incline-our-work .our-work p{
+    color: rgba(0, 0, 0, 1);
+}
+.our-work-filter {
+    display: flex;
+    padding-bottom: 25px;
+    justify-content: space-between;
+}
+.our-work-filter h2{
+    font-size: 36px;
+    padding: 0;
+}
+.filter-menu {
+    display: flex;
+}
+.filter-menu li {
+    margin: 0 10px;
+} 
+.filter-menu a {
+    color: rgba(0, 0, 0, 1);
+    font-family: Open-Sans;
+    font-weight: 400;
+} 
+.filter-menu a:hover,.filter-menu a.active {
+    font-weight: 700;
+}
+.incline-our-work .dropbtn {
+    font-size: 18px;
+    padding: 6px 18px;
+}
+.dropdown-filter {
+    display: none;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    right: 40px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+} 
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.dropdown-filter:hover .dropdown-content {
+    display: block;
+}
+.our-work-main{
+    padding: 30px 40px;
+}
+
+/* ===========================careers page=================================== */
+
+.breadcrumbs{
+    display: flex;
+    margin-top: 50px;
+}
+.breadcrumbs li::after{
+    content: "/";
+    padding: 0 5px;
+}
+.breadcrumbs li:last-child:after{
+    content: "";
+}
+.breadcrumbs li a{
+    color: rgba(57, 242, 174, 1);
+}
+.incline-careers h3{
+    font-size: 46px;
+    font-weight: 378;
+    line-height: 53.27px;
+    margin: 0;
+}
+.incline-careers input{
+    margin-bottom: 16px;
+}
+.incline-careers main ul.menu {
+    display: inline-flex;
+    border-bottom: 1px solid #CECECE;
+}
+.incline-careers main ul {
+    padding-left: 0;
+}
+.incline-careers main ul li a{
+    font-family: Open-Sans;
+}
+.incline-careers main .careers-menu ul li:hover a,.incline-careers main .careers-menu ul li a.active{
+    font-weight: 700;   
+}
+.incline-careers main .careers-menu ul li a:hover{
+    border-bottom: 4px solid #39F2AE;
+}
+.careers-application main input{
+    width: 70%;
+}
+.careers-menu{
+    padding-bottom: 20px;
+}
+.incline-careers main form p{
+    margin: 0;
+    font-family: Open-Sans;
+    font-size: 12px;
+}
+.careers-resume {
+    margin: 25px 0;
+}
+.careers-resume input#resume {
+    background: no-repeat;
+    border: none;
+}
+input::file-selector-button{
+    background: #7C7C7C;
+    padding: 10px 20px;
+    border: none;
+    font-family: Nippo;
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffff;
+}
+.careers-chechbox input#consent{
+    width: auto;
+}
+/* The container */
+.careers-chechbox {
+    font-family: Open-Sans;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 28px;
+}
+.careers-chechbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+} 
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+.careers-chechbox:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+.careers-chechbox input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.careers-chechbox input:checked ~ .checkmark:after {
+    display: block;
+}
+.careers-chechbox .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ================OVERVIEW MENU========================== */
+
+.overview-radio input{
+    width: unset;
+}
+.overview-list h4{
+    font-family: Nippo;
+    font-size: 30px;
+    font-weight: 378;    
+}
+.overview-radio p,.overview-radio label{
+    font-family: Open-Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.overview-list li{
+    list-style: disc;
+    font-family: Open-Sans;
+    padding: 10px 0;
+}
+
+
+
 
 
 
@@ -604,8 +817,7 @@ form p{
         display: none;
     }
     .burger-menu {
-        display: flex !important;
-        align-items: center;
+        display: block;
     }
     .hero-text h5{
         font-size: 18px;
@@ -637,6 +849,9 @@ form p{
     }
     .section-content h3 {
         font-size: 40px;
+    }
+    .chalkboard, .health-lottery {
+        width: 48%;
     }
 
 }
@@ -701,14 +916,21 @@ form p{
     .section:nth-child(2n) {
         flex-direction: column-reverse;
     }
+    .chalkboard, .health-lottery {
+        width: 100%;
+    }
     .form-group {
         flex-direction: column;
     }
-    
     input,textarea {
         width: 100%;
         margin-bottom: 10px;
-      }
+    }
+    .filter-menu{
+        display: none;
+    }
+    .dropdown-filter {
+        display: inline-block;
     }
     
 }
@@ -724,14 +946,13 @@ form p{
     }
     .chat p {
         font-size: 25px;
-        margin: 0;
     }
     button {
         font-size: 18px;
     }
     .footer-menu {
         display: flex;
-        flex-direction: column;
+        flex-direction: column !important;
         gap: 18px;
     }
     .footer-menu li::after{
@@ -749,7 +970,6 @@ form p{
     .section-content h3 {
         font-size: 30px;
         line-height: unset;
-
     }
     .ad-creative-info p,.brand-interface-info p{
         font-size: 26px;
@@ -757,6 +977,14 @@ form p{
     }
     .our-service{
         padding-top: 50px;
+    }
+    .our-work-filter h2{
+        font-size: 26px;
+    }
+    .our-work p{
+        text-align: end;
+        font-size: 14px;
+        line-height: 18.51px;
     }
     
 }

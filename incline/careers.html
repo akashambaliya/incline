@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview</title>
+    <link rel="stylesheet" href="./css/home.css">
+</head>
+<body class="incline-careers careers-overview">
+    <div class="container header header-desktop">
+        <div class="left-section">
+            <div class="logo">
+                <a href="./Homepage.html">
+                    <img src="./img/Incline logo WHITE 2.svg" alt="logo">
+                </a>
+            </div>
+        </div>
+        <div class="right-section">
+            <ul class="menu">
+                <li><a href="./our service.html">Our Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="./our-work.html">Our Work</a></li>
+                <li><a href="#">Media Library</a></li>
+                <li><a href="./contact us.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="burger-menu">
+            <a href="#"><img src="./img/menu_icon_bk.svg" alt=""></a>
+        </div>
+    </div>
+</div>
+<div class="container careers-breadcrumbs">
+    <ul class="breadcrumbs">
+        <li><a href="#">Careers</a></li>
+        <li>Job Description</li>
+    </ul>
+</div>    
+<main>
+    <h3>Senior User Acquisition Analyst</h3>
+    <div class="careers-menu">
+        <ul class="menu">
+            <li><a href="#void" onclick="overview()">Overview</a></li>
+            <li><a href="#void" onclick="application()">Application</a></li>
+        </ul>
+    </div>
+
+    <div id="overview-application" style="display: block;">
+        <div class="overview-radio">
+            <input type="radio" id="salary" name="overview" value="salary">
+            <label for="salary">Salary: $66,560 - $150,000 annually</label><br>
+            <input type="radio" id="time" name="overview" value="time">
+            <label for="time">Job type: Full time</label><br>
+            <input type="radio" id="location" name="overview" value="location">
+            <label for="location">Job location: Hybrid, Walnut Creek CA</label>
+        
+            <p>The User Acquisition team at Incline Gaming Marketing is looking for an experienced UA Analyst who has exceptional data skills. As a User Acquisition performance marketer, you will acquire users for Incline’s growing portfolio of clients while leveraging Facebook, Google, Apple and other self-serve programmatic ads platforms to scale our UA efforts.</p>
+
+            <p>You will be responsible for managing UA campaigns daily, optimizing creatives, keywords and other campaign parameters. If you have an eye for quantitative online marketing and can manage multiple priorities while delivering outstanding execution, we would love to talk to you. On top of some great perks and benefits, you will be working with a top-class leadership team, who can grow you to the next level and help you gain skills and experience to elevate your career.</p>
+
+            <p>For this full-time role, the salary is between $66,560 – $150,000 annually, plus bonus potential, and a suite of benefits. Compensation frameworks are tailored by role, seniority, and geography. Specific pay within this spectrum is influenced by the role’s location and additional considerations such as directly related skills, experience, and academic or professional qualifications.</p>
+        </div>
+        <div class="overview-list">
+            <h4>What you will do</h4>
+            <ol>
+                <li>Launch UA campaigns in a systematic manner to target the right audience with the right messaging</li>
+                <li>Data analyses and ad-hoc reporting that drives user acquisition, retention and monetization for a suite of mobile app products</li>
+                <li>Optimize UA campaigns based on defined ROAS, CPI, CPA, CPD and other goals</li>
+                <li>Creative Concepts; research the market and the target group of users and define creative concepts that can attract more users</li>
+                <li>Creative Requests; execute the creative request from building the concepts to producing tens of different variants in an effort to improve the efficacy of creatives</li>
+                <li>Creative Testing; continuously test new concepts and creatives while running A/B test and validating hypothesis</li>
+                <li>Reporting; be on top of your campaign data daily and make sure to provide reporting</li>
+            </ol>
+        </div>
+        <div class="overview-list">
+            <h4>What you will need</h4>
+            <ol>
+                <li>A hunger to be a continuous learner and getting things done in the mobile advertising space and the mobile app market</li>
+                <li>Creative problem solving acumen, as well as analytical rigor to verify or invalidate assumptions</li>
+                <li>Hands-on experience with Facebook Ads and/or Google Ads is a plus but not a must</li>
+                <li>Familiarity with CTR, CVR, CPI, ARPU, Retention and LTV is preferred</li>
+                <li>Direct previous experience in mobile user acquisition is a plus, but not a requirement – we want determined, quantitative problem solvers with a passion for user growth</li>
+                <li>Be in our Walnut Creek, CA, office at least 2 days per week</li>
+            </ol>
+        </div>
+        <div class="overview-list">
+            <h4>Why Should you apply</h4>
+            <ol>
+                <li>A hunger to be a continuous learner and getting things done in the mobile advertising space and the mobile app market</li>
+                <li>Creative problem solving acumen, as well as analytical rigor to verify or invalidate assumptions</li>
+                <li>Hands-on experience with Facebook Ads and/or Google Ads is a plus but not a must</li>
+                <li>Familiarity with CTR, CVR, CPI, ARPU, Retention and LTV is preferred</li>
+                <li>Direct previous experience in mobile user acquisition is a plus, but not a requirement – we want determined, quantitative problem solvers with a passion for user growth</li>
+                <li>Be in our Walnut Creek, CA, office at least 2 days per week</li>
+            </ol>
+        </div>
+    </div>
+    <div id="careers-overview" style="display: none;">
+        <form action="#" method="post">
+            <input type="text" id="fullName" name="fullName" placeholder="Full Name*" required>  
+            <input type="email" id="email" name="email" placeholder="Email*" required>
+            <input type="tel" id="phone" name="phone" placeholder="Phone Number*" required>
+            <textarea id="coverLetter" name="coverLetter" placeholder="Cover Letter*" required></textarea>
+            <div class="careers-resume">
+                <label for="resume">Upload Resume*</label>
+                <p>Accepted file types: doc, docx, pdf</p>
+                <input type="file" id="resume" name="resume" accept=".doc,.docx,.pdf" required>
+            </div>
+            <div class="careers-chechbox">
+                <input type="checkbox" id="consent" name="consent" required>
+                <label for="consent">By using this form you agree with the storage and handling of your data by this website.</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</main>
+<div class="bg-color">
+    <div class="container footer">
+        <h2>Contact us</h2>
+        <div class="chat">
+            <p>Speak to a member of our team today</p>
+            <button>Let's chat</button>
+        </div>
+        <div class="sub-footer">
+            <div class="footer-logo">
+                <img src="./img/Incline logo V3 2.png" alt="footer logo">
+                <img src="./img/Layer_1 (1).png" alt="">
+            </div>
+            <div class="footer-nav">
+                <ul class="footer-menu">
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Media Library</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="copyright">
+                    <p>Copyright © 2024 Incline</p>
+                    <p>Site designed by Incline</p>
+                </div>
+            </div>
+            <div class="footer-social-logo">
+                <a href="#"><img src="./img/Socials.svg" alt=""></a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./js/script.js"></script>
+</body>
+</html>
